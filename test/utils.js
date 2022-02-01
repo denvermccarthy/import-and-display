@@ -43,9 +43,9 @@ export function renderTier(tier) {
     h3.textContent = tier.tier;
     const ul = document.createElement('ul');
     for (const item of tier.food) {
-      const li = document.createElement('li');
-      li.textContent = item;
-      ul.append(li); 
+        const li = document.createElement('li');
+        li.textContent = item;
+        ul.append(li); 
     }
     div.append(h3, ul);
     return div;
